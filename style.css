@@ -1,0 +1,58 @@
+:root{
+  --panel:#E9EDF0; --panel-2:#F8FAFB; --line:#C3CED6; --ink:#0E2233; --muted:#4A5D6D;
+  --rail:#1F4E79; --wire:#9FB3C4; --run:#0E8A5C; --amber:#F5C542;
+  --head:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --panel:#0F1B26; --panel-2:#16273A; --line:#2B4157; --ink:#E8EFF5; --muted:#9DB0C1; --rail:#6FA8DC; --wire:#4B6479; --run:#3FD39A; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--panel);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.65}
+a{color:var(--rail)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:10;background:var(--panel-2);border-bottom:2px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-family:var(--head);font-weight:700;font-size:22px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+nav a{font-family:var(--head);font-weight:600;font-size:18px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);margin-left:18px}
+nav a:hover{color:var(--rail)}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.05;text-transform:uppercase;letter-spacing:.02em}
+h1{font-size:clamp(44px,8vw,88px);font-weight:700;max-width:12ch}
+h2{font-size:clamp(30px,4vw,44px);font-weight:700;color:var(--rail);margin-bottom:28px}
+h3{font-size:26px;font-weight:600;margin-bottom:4px}
+.lead{font-size:21px;max-width:60ch;color:var(--muted);margin:24px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:var(--head);font-weight:600;font-size:19px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:12px 24px;border:2px solid var(--rail);color:var(--rail);border-radius:2px}
+.btn.primary{background:var(--rail);color:var(--panel-2)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--panel-2)}
+.ladder{margin-top:48px;background:var(--panel-2);border:2px solid var(--line);padding:16px}
+.ladder svg{width:100%;height:auto;display:block}
+.ladder figcaption{font-family:var(--head);letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:var(--muted);margin-top:8px}
+.flow{stroke:var(--run);stroke-width:4;fill:none;stroke-dasharray:10 14;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-48}}
+@media (prefers-reduced-motion: reduce){.flow{animation:none;stroke-dasharray:none}html{scroll-behavior:auto}}
+.about{display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:start}
+.portrait{position:relative;width:220px;height:260px;background:var(--rail);color:var(--panel-2);display:grid;place-items:center;font-family:var(--head);font-size:84px;font-weight:700;overflow:hidden}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--panel-2);border:2px solid var(--line);border-top:6px solid var(--rail);padding:22px}
+.tag{display:inline-block;font-family:var(--head);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px;padding:2px 10px;background:var(--amber);color:#2A2000;margin-bottom:10px}
+.tag.done{background:var(--run);color:#fff}
+.meta{font-family:var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-size:16px}
+.stack{font-size:15px;color:var(--muted);margin:12px 0 0}
+.timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--wire)}
+.timeline li{padding:0 0 28px 24px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;background:var(--panel-2);border:3px solid var(--rail)}
+dl{display:grid;grid-template-columns:200px 1fr;gap:12px 24px;margin:0}
+dt{font-family:var(--head);font-weight:600;font-size:20px;letter-spacing:.05em;text-transform:uppercase;color:var(--rail)}
+dd{margin:0}
+footer{padding:32px 0;color:var(--muted);font-size:15px}
+@media (max-width:700px){
+  .about{grid-template-columns:1fr}
+  dl{grid-template-columns:1fr;gap:2px}
+  dd{margin-bottom:14px}
+  nav a{margin:0 14px 0 0}
+  section{padding:48px 0}
+}

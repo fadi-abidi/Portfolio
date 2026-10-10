@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fadi Abidi | Controls & Automation Engineer</title>
+<meta name="description" content="Fadi Abidi, Controls & Automation Engineer based in Ariana, Tunisia. PLC programming, robotics and commissioning of automated production lines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Fadi Abidi</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section>
+  <div class="wrap">
+    <h1>I make automated production lines run.</h1>
+    <p class="lead">Controls &amp; Automation Engineer based in Ariana, Tunisia. I program PLCs and robots and I commission machines on customer sites around the world.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+    <figure class="ladder">
+      <svg viewBox="0 0 900 150" role="img" aria-label="A ladder logic rung: when SAFETY_OK and LINE_READY are true the LINE_RUNNING output turns on">
+        <line x1="30" y1="10" x2="30" y2="140" stroke="var(--rail)" stroke-width="6"/>
+        <line x1="870" y1="10" x2="870" y2="140" stroke="var(--rail)" stroke-width="6"/>
+        <path d="M30 75 H200 M260 75 H470 M530 75 H720 M780 75 H870" stroke="var(--wire)" stroke-width="4" fill="none"/>
+        <path class="flow" d="M30 75 H200 M260 75 H470 M530 75 H720 M780 75 H870"/>
+        <line x1="200" y1="50" x2="200" y2="100" stroke="var(--ink)" stroke-width="5"/>
+        <line x1="260" y1="50" x2="260" y2="100" stroke="var(--ink)" stroke-width="5"/>
+        <line x1="470" y1="50" x2="470" y2="100" stroke="var(--ink)" stroke-width="5"/>
+        <line x1="530" y1="50" x2="530" y2="100" stroke="var(--ink)" stroke-width="5"/>
+        <path d="M720 50 Q700 75 720 100 M780 50 Q800 75 780 100" stroke="var(--run)" stroke-width="5" fill="none"/>
+        <text x="230" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--ink)">SAFETY_OK</text>
+        <text x="500" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--ink)">LINE_READY</text>
+        <text x="750" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--run)">LINE_RUNNING</text>
+      </svg>
+      <figcaption>Rung 1: safety first, then ready, then run.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="about">
+      <div class="portrait" aria-hidden="false">FA<img src="assets/photo.png" alt="Portrait of Fadi Abidi" onerror="this.remove()"></div>
+      <div>
+        <p>I am an automation engineer at Mondragon Assembly Group, where I program, commission and support automated assembly machines for customers in several countries. Before that I worked in manufacturing plants on electrical systems and automation.</p>
+        <p>I like the moment when a machine that was only drawings and code starts to produce good parts. I am also building my skills in robotics with ROS 2 in my own time.</p>
+        <p class="meta">Ariana, Tunisia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="tag done">Volunteer team project, 2020</span>
+        <h3>Doctor J</h3>
+        <p>A wheeled robot built to help fight COVID-19 by letting patients and doctors communicate without contact.</p>
+        <!-- Add one sentence here about your own part in the project. -->
+        <p class="stack">Robotics · Electronics · Team project</p>
+      </article>
+      <article class="card">
+        <span class="tag done">Final-year project, 2020</span>
+        <h3>Weighing, labeling and packaging line</h3>
+        <p>An automated system that weighs, labels and packs products, completed during my final-year internship at Poulina Group.</p>
+        <p class="stack">Siemens S7-1200 · TIA Portal · SolidWorks</p>
+      </article>
+      <article class="card">
+        <span class="tag">Learning project, in progress</span>
+        <h3>Agricultural drone prototype</h3>
+        <p>A simulated drone for field monitoring. I am learning to build its software stack in simulation before any hardware.</p>
+        <p class="stack">ROS 2 · Gazebo · GPS</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Programmer, Mondragon Assembly Group</h3>
+        <p class="meta">Jul 2024 to present</p>
+        <p>PLC programming and commissioning of automated assembly machines with Beckhoff TwinCAT 3 and field support for customers abroad.</p>
+      </li>
+      <li>
+        <h3>Marquardt</h3>
+        <p class="meta">Oct 2022 to Jun 2024</p>
+        <p>Automation and controls work in a production environment.</p>
+      </li>
+      <li>
+        <h3>Sumitomo</h3>
+        <p class="meta">Jan 2021 to Oct 2022</p>
+        <p>Automation and controls work in a production environment.</p>
+      </li>
+      <li>
+        <h3>Poulina Group</h3>
+        <p class="meta">Jan to Jul 2020</p>
+        <p>Final-year internship: automated weighing, labeling and packaging system.</p>
+      </li>
+    </ul>
+    <h3 style="margin-top:24px">Education and certifications</h3>
+    <p><strong>Engineering degree:</strong> Université Libre de Tunis (ULT) 2017 to 2020.<br>
+    <strong>Beckhoff TwinCAT 3:</strong> 12 training modules, 2024.<br>
+    <strong>English:</strong> EF SET C1, 2024.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <dl>
+      <dt>Controls</dt><dd>Beckhoff TwinCAT 3 · Siemens S7-1200 and TIA Portal</dd>
+      <dt>Robotics</dt><dd>Industrial robot integration · ROS 2 and Gazebo (learning)</dd>
+      <dt>Design</dt><dd>SolidWorks</dd>
+      <dt>Field work</dt><dd>Commissioning · Troubleshooting · Customer support on site</dd>
+      <dt>Languages</dt><dd>Arabic · French · English (C1)</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lead" style="margin-top:0">The best way to reach me is by email or LinkedIn.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:Abidifedi3@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/fadi-abidi-23a277118/" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year">2026</span> Fadi Abidi. Ariana, Tunisia.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
