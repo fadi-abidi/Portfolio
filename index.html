@@ -4,151 +4,263 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fadi Abidi | Controls & Automation Engineer</title>
-<meta name="description" content="Fadi Abidi, Controls & Automation Engineer based in Ariana, Tunisia. PLC programming, robotics and commissioning of automated production lines.">
+<meta name="description" content="Fadi Abidi, Controls & Automation Engineer based in Ariana, Tunisia. PLC programming, robotics, commissioning of automated production lines and Python lab automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a class="brand" href="#top">Fadi Abidi</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Fadi Abidi, back to top">FA</a>
     <nav aria-label="Main">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch between light and dark appearance"><span aria-hidden="true">&#9680;</span> Appearance</button>
   </div>
 </header>
 
 <main id="top">
-<section>
-  <div class="wrap">
-    <h1>I make automated production lines run.</h1>
-    <p class="lead">Controls &amp; Automation Engineer based in Ariana, Tunisia. I program PLCs and robots and I commission machines on customer sites around the world.</p>
-    <div class="btns">
-      <a class="btn primary" href="#projects">See my projects</a>
-      <a class="btn" href="#contact">Contact me</a>
-    </div>
-    <figure class="ladder">
-      <svg viewBox="0 0 900 150" role="img" aria-label="A ladder logic rung: when SAFETY_OK and LINE_READY are true the LINE_RUNNING output turns on">
-        <line x1="30" y1="10" x2="30" y2="140" stroke="var(--rail)" stroke-width="6"/>
-        <line x1="870" y1="10" x2="870" y2="140" stroke="var(--rail)" stroke-width="6"/>
-        <path d="M30 75 H200 M260 75 H470 M530 75 H720 M780 75 H870" stroke="var(--wire)" stroke-width="4" fill="none"/>
-        <path class="flow" d="M30 75 H200 M260 75 H470 M530 75 H720 M780 75 H870"/>
-        <line x1="200" y1="50" x2="200" y2="100" stroke="var(--ink)" stroke-width="5"/>
-        <line x1="260" y1="50" x2="260" y2="100" stroke="var(--ink)" stroke-width="5"/>
-        <line x1="470" y1="50" x2="470" y2="100" stroke="var(--ink)" stroke-width="5"/>
-        <line x1="530" y1="50" x2="530" y2="100" stroke="var(--ink)" stroke-width="5"/>
-        <path d="M720 50 Q700 75 720 100 M780 50 Q800 75 780 100" stroke="var(--run)" stroke-width="5" fill="none"/>
-        <text x="230" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--ink)">SAFETY_OK</text>
-        <text x="500" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--ink)">LINE_READY</text>
-        <text x="750" y="38" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="20" fill="var(--run)">LINE_RUNNING</text>
-      </svg>
-      <figcaption>Rung 1: safety first, then ready, then run.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <div class="about">
-      <div class="portrait" aria-hidden="false">FA<img src="assets/photo.png" alt="Portrait of Fadi Abidi" onerror="this.remove()"></div>
-      <div>
-        <p>I am an automation engineer at Mondragon Assembly Group, where I program, commission and support automated assembly machines for customers in several countries. Before that I worked in manufacturing plants on electrical systems and automation.</p>
-        <p>I like the moment when a machine that was only drawings and code starts to produce good parts. I am also building my skills in robotics with ROS 2 in my own time.</p>
-        <p class="meta">Ariana, Tunisia</p>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Controls / Automation / Commissioning</p>
+      <h1>Fadi<br>Abidi</h1>
+      <p class="role">Controls &amp; Automation Engineer</p>
+      <p class="hook">I make automated production lines run.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">Explore projects <span aria-hidden="true">&#8600;</span></a>
+        <a class="btn" href="https://github.com/fadi-abidi" rel="noopener" target="_blank">GitHub <span aria-hidden="true">&#8599;</span></a>
       </div>
+      <p class="stack"><b>Core stack</b> Beckhoff TwinCAT 3 &middot; Siemens TIA Portal &middot; EtherCAT &middot; ABB, KUKA and Estun robots &middot; Machine vision &middot; Python</p>
+    </div>
+    <div class="hero-art" aria-hidden="false">
+      <svg class="rung" viewBox="0 0 520 300" role="img" aria-label="A ladder logic rung: SAFETY_OK and LINE_READY contacts power the LINE_RUNNING coil">
+        <line x1="24" y1="30" x2="24" y2="270" stroke="var(--blue)" stroke-width="5"/>
+        <line x1="496" y1="30" x2="496" y2="270" stroke="var(--blue)" stroke-width="5"/>
+        <path d="M24 150 H120 M170 150 H270 M320 150 H410 M462 150 H496" stroke="var(--wire)" stroke-width="3" fill="none"/>
+        <path class="flow" d="M24 150 H120 M170 150 H270 M320 150 H410 M462 150 H496"/>
+        <line x1="120" y1="126" x2="120" y2="174" stroke="var(--ink)" stroke-width="4"/>
+        <line x1="170" y1="126" x2="170" y2="174" stroke="var(--ink)" stroke-width="4"/>
+        <line x1="270" y1="126" x2="270" y2="174" stroke="var(--ink)" stroke-width="4"/>
+        <line x1="320" y1="126" x2="320" y2="174" stroke="var(--ink)" stroke-width="4"/>
+        <circle cx="436" cy="150" r="26" fill="var(--blue)"/>
+        <circle cx="436" cy="150" r="14" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/>
+        <text x="145" y="108" text-anchor="middle" class="svt">SAFETY_OK</text>
+        <text x="295" y="108" text-anchor="middle" class="svt">LINE_READY</text>
+        <text x="436" y="108" text-anchor="middle" class="svt">LINE_RUNNING</text>
+      </svg>
+      <span class="chip c1">RUNG 001</span>
+      <span class="chip c2">CYCLE 10 ms</span>
+      <span class="chip c3">STATE / RUNNING</span>
+      <figure class="portrait">
+        <img src="assets/photo.png" alt="Portrait of Fadi Abidi" onerror="this.parentNode.classList.add('nophoto');this.remove()">
+        <span class="mono-fa">FA</span>
+      </figure>
     </div>
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="block">
   <div class="wrap">
-    <h2>Projects</h2>
+    <p class="eyebrow">Selected work / 2020 to 2026</p>
+    <div class="head">
+      <h2>Selected engineering projects</h2>
+      <p class="sub">Lines commissioned on customer sites, machines built from scratch and the code I write to learn.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="f on" data-f="all" type="button">All</button>
+      <button class="f" data-f="field" type="button">Field</button>
+      <button class="f" data-f="software" type="button">Python</button>
+      <button class="f" data-f="control" type="button">Control</button>
+      <button class="f" data-f="robotics" type="button">Robotics</button>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
     <div class="cards">
-      <article class="card">
-        <span class="tag done">Volunteer team project, 2020</span>
-        <h3>Doctor J</h3>
-        <p>A wheeled robot built to help fight COVID-19 by letting patients and doctors communicate without contact.</p>
-        <!-- Add one sentence here about your own part in the project. -->
-        <p class="stack">Robotics · Electronics · Team project</p>
+      <article class="card feature" data-cat="field">
+        <p class="meta"><span>FLD-01</span><span>Field &middot; 2024 to present</span></p>
+        <h3>4 complete photovoltaic production lines commissioned</h3>
+        <p>Start-up, troubleshooting and handover of complete solar panel production lines at customer sites in Algeria, India, China and France.</p>
+        <p class="tags"><i>Beckhoff TwinCAT 3</i><i>EtherCAT</i><i>ABB and Estun robots</i><i>Hikrobot, Cognex, Keyence</i><i>Servo drives</i></p>
+        <details><summary>View details</summary>
+          <p>Each line covers the full photovoltaic manufacturing process. My part goes from PLC and HMI programming to integrating robots, vision systems, servo drives and conveyors into one system that runs day and night, then training the customer's teams at handover. When a line stops, I trace the cause across PLC logic, drives, vision and power supply and turn the fix into a standard for similar installations.</p>
+        </details>
       </article>
-      <article class="card">
-        <span class="tag done">Final-year project, 2020</span>
+      <article class="card" data-cat="software">
+        <p class="meta"><span>SW-02</span><span>Python &middot; 2026</span></p>
+        <h3>PyLabRobot first steps</h3>
+        <p>My first lab automation protocols in Python: a simulated Hamilton STARlet liquid handler that picks up tips and moves liquid between the wells of a 96-well plate.</p>
+        <p class="tags"><i>Python</i><i>PyLabRobot</i><i>Simulation</i><i>Lab automation</i></p>
+        <details><summary>View details</summary>
+          <p>Three scripts: a first transfer from well A1 to A2, the same protocol shown live in the PyLabRobot Visualizer and my own loop that fills a whole plate row. Coming from PLCs, the backend works like simulation mode in TwinCAT: the same protocol runs on the simulator or on a real robot.</p>
+        </details>
+        <a class="go" href="https://github.com/fadi-abidi/pylabrobot-first-steps" rel="noopener" target="_blank">View code on GitHub <span aria-hidden="true">&#8599;</span></a>
+      </article>
+      <article class="card" data-cat="control">
+        <p class="meta"><span>CTL-03</span><span>Control &middot; 2020</span></p>
         <h3>Weighing, labeling and packaging line</h3>
-        <p>An automated system that weighs, labels and packs products, completed during my final-year internship at Poulina Group.</p>
-        <p class="stack">Siemens S7-1200 · TIA Portal · SolidWorks</p>
+        <p>An automated system that weighs, labels and packs products, built as my final-year project at Poulina Group.</p>
+        <p class="tags"><i>Siemens S7-1200</i><i>TIA Portal</i><i>SolidWorks</i></p>
+        <details><summary>View details</summary>
+          <p>PLC program and operator interface for the full cycle, mechanical design and conveyor power calculation in SolidWorks, then commissioning with electrical, electronic and mechanical tests.</p>
+        </details>
       </article>
-      <article class="card">
-        <span class="tag">Learning project, in progress</span>
-        <h3>Agricultural drone prototype</h3>
-        <p>A simulated drone for field monitoring. I am learning to build its software stack in simulation before any hardware.</p>
-        <p class="stack">ROS 2 · Gazebo · GPS</p>
+      <article class="card" data-cat="robotics">
+        <p class="meta"><span>ROB-04</span><span>Robotics &middot; 2020</span></p>
+        <h3>Doctor J</h3>
+        <p>A wheeled medical robot built by a volunteer team during COVID-19 so patients and doctors could communicate without contact.</p>
+        <p class="tags"><i>Robotics</i><i>Electronics</i><i>Mechanical design</i><i>Team project</i></p>
+        <details><summary>View details</summary>
+          <p>I worked on the electronic and mechanical design. The robot had a Wi-Fi camera, an automated disinfection system and a tray to deliver meals and medication, all built under real time pressure.</p>
+        </details>
       </article>
     </div>
   </div>
 </section>
 
-<section id="experience">
+<section id="experience" class="block dark">
   <div class="wrap">
-    <h2>Experience</h2>
-    <ul class="timeline">
-      <li>
-        <h3>Programmer, Mondragon Assembly Group</h3>
-        <p class="meta">Jul 2024 to present</p>
-        <p>PLC programming and commissioning of automated assembly machines with Beckhoff TwinCAT 3 and field support for customers abroad.</p>
-      </li>
-      <li>
-        <h3>Marquardt</h3>
-        <p class="meta">Oct 2022 to Jun 2024</p>
-        <p>Automation and controls work in a production environment.</p>
-      </li>
-      <li>
-        <h3>Sumitomo</h3>
-        <p class="meta">Jan 2021 to Oct 2022</p>
-        <p>Automation and controls work in a production environment.</p>
-      </li>
-      <li>
-        <h3>Poulina Group</h3>
-        <p class="meta">Jan to Jul 2020</p>
-        <p>Final-year internship: automated weighing, labeling and packaging system.</p>
-      </li>
-    </ul>
-    <h3 style="margin-top:24px">Education and certifications</h3>
-    <p><strong>Engineering degree:</strong> Université Libre de Tunis (ULT) 2017 to 2020.<br>
-    <strong>Beckhoff TwinCAT 3:</strong> 12 training modules, 2024.<br>
-    <strong>English:</strong> EF SET C1, 2024.</p>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <h2>Skills</h2>
-    <dl>
-      <dt>Controls</dt><dd>Beckhoff TwinCAT 3 · Siemens S7-1200 and TIA Portal</dd>
-      <dt>Robotics</dt><dd>Industrial robot integration · ROS 2 and Gazebo (learning)</dd>
-      <dt>Design</dt><dd>SolidWorks</dd>
-      <dt>Field work</dt><dd>Commissioning · Troubleshooting · Customer support on site</dd>
-      <dt>Languages</dt><dd>Arabic · French · English (C1)</dd>
-    </dl>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <p class="lead" style="margin-top:0">The best way to reach me is by email or LinkedIn.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:Abidifedi3@gmail.com">Email me</a>
-      <a class="btn" href="https://www.linkedin.com/in/fadi-abidi-23a277118/" rel="noopener">LinkedIn</a>
+    <p class="eyebrow">Resume / 2020 to present</p>
+    <div class="head">
+      <h2>Experience and education</h2>
+      <p class="sub">Nearly 6 years in industry, from production plants to customer sites abroad.</p>
     </div>
+    <h3 class="sec"><span>01</span> Professional experience</h3>
+    <div class="tl">
+      <article class="tcard current">
+        <p class="meta"><span>Jul 2024 to present</span><span class="now">Current</span></p>
+        <h4>Mondragon Assembly Group</h4>
+        <p class="rl">Programmer</p>
+        <p>PLC programming and commissioning of photovoltaic production lines with Beckhoff TwinCAT 3. 4 complete lines commissioned at customer sites in Algeria, India, China and France, with robot and vision integration and training of the customer's teams.</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>Oct 2022 to Jun 2024</span></p>
+        <h4>Marquardt Tunisia</h4>
+        <p class="rl">Process Engineer, Electronics Manufacturing</p>
+        <p>Kept wave and selective soldering, press fitting, conformal coating and CNC milling equipment running. Solved recurring production issues with 8D, Ishikawa and 5 Whys.</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>Jan 2021 to Oct 2022</span></p>
+        <h4>Sumitomo Electric Bordnetze</h4>
+        <p class="rl">Methods and Process Engineer</p>
+        <p>Cut downtime on cutting-area machinery by around 30%. Improved flows with Lean tools (VSM, OEE, SMED) and led PFMEA risk analyses.</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>Jan to Jul 2020</span></p>
+        <h4>Poulina Group</h4>
+        <p class="rl">Final-year engineering internship</p>
+        <p>Designed and commissioned an automated weighing, labeling and packaging system with a Siemens S7-1200 PLC.</p>
+      </article>
+    </div>
+    <h3 class="sec"><span>02</span> Education</h3>
+    <div class="tl">
+      <article class="tcard">
+        <p class="meta"><span>2017 to 2020</span></p>
+        <h4>Université Libre de Tunis</h4>
+        <p class="rl">Engineering Degree, Electromechanical Engineering</p>
+        <p>Diplôme National d'Ingénieur, Master's level.</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2014 to 2016</span></p>
+        <h4>ISET Jendouba</h4>
+        <p class="rl">Bachelor's Degree, Mechanical Engineering</p>
+        <p>Licence Appliquée, specialising in Industrial Maintenance.</p>
+      </article>
+    </div>
+    <h3 class="sec"><span>03</span> Certifications</h3>
+    <div class="tl two">
+      <article class="tcard">
+        <p class="meta"><span>2024</span></p>
+        <h4>Beckhoff TwinCAT 3</h4>
+        <p class="rl">12 training modules</p>
+        <p>Including Object Oriented Programming, Motion, Vision, TwinSAFE and Source Control.</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2024</span></p>
+        <h4>EF SET English</h4>
+        <p class="rl">C1 Advanced</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2024</span></p>
+        <h4>IBM Cognitive Class</h4>
+        <p class="rl">Python 101 for Data Science</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2022</span></p>
+        <h4>6Sigma Study</h4>
+        <p class="rl">Six Sigma Yellow Belt</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2022</span></p>
+        <h4>FMEA and Control Plan</h4>
+        <p class="rl">VDA and AIAG</p>
+      </article>
+      <article class="tcard">
+        <p class="meta"><span>2021</span></p>
+        <h4>SPC and MSA</h4>
+        <p class="rl">Statistical Process Control</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="block">
+  <div class="wrap">
+    <p class="eyebrow">Toolkit</p>
+    <div class="head">
+      <h2>Skills</h2>
+      <p class="sub">What I use on site and at my desk.</p>
+    </div>
+    <div class="skills">
+      <div class="skill"><h4>PLC and control</h4><p>Beckhoff TwinCAT 3, Siemens TIA Portal (S7-1200, S7-1500), Structured Text, Ladder, SFC, object-oriented PLC programming</p></div>
+      <div class="skill"><h4>Robotics</h4><p>ABB (RobotStudio), KUKA KR 210, Estun, pick and place, vision-guided handling, robot to PLC handshakes</p></div>
+      <div class="skill"><h4>Machine vision</h4><p>Hikrobot MVS, Cognex VisionPro, Keyence, calibration, inspection, robot guidance</p></div>
+      <div class="skill"><h4>Networks and drives</h4><p>EtherCAT, PROFINET, EtherNet/IP, Modbus TCP, Wireshark, Yaskawa and Inovance servo drives</p></div>
+      <div class="skill"><h4>Safety and hardware</h4><p>Beckhoff TwinSAFE, schematic reading, EPLAN, soldering and component-level repair, SolidWorks</p></div>
+      <div class="skill"><h4>Python</h4><p>Scripts for test tools, log analysis and TCP and serial communication, PyLabRobot, Git and GitHub</p></div>
+      <div class="skill"><h4>Quality and Lean</h4><p>8D, PFMEA, Ishikawa, 5 Whys, SPC, MSA, VSM, OEE, SMED</p></div>
+      <div class="skill"><h4>Field work</h4><p>Commissioning, FAT and SAT support, troubleshooting, customer training on site</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="block">
+  <div class="wrap about">
+    <div>
+      <p class="eyebrow">Operating principle</p>
+      <h2 class="big">Safety first. Then ready. Then run.</h2>
+    </div>
+    <div class="txt">
+      <p>I am an automation engineer at Mondragon Assembly Group, where I program, commission and support photovoltaic production lines for customers in several countries. Before that I worked in automotive and electronics plants on processes, maintenance and continuous improvement.</p>
+      <p>I like the moment when a machine that was only drawings and code starts to produce good parts. I am now learning to control robots and lab instruments with Python, starting with PyLabRobot.</p>
+      <p class="mono">Languages: Arabic &middot; French (C1) &middot; English (C1)</p>
+    </div>
+  </div>
+  <div class="wrap steps">
+    <div><b>01 / PROGRAM</b></div><div><b>02 / SIMULATE</b></div><div><b>03 / COMMISSION</b></div><div><b>04 / SUPPORT</b></div>
+  </div>
+</section>
+
+<section id="contact" class="block last">
+  <div class="wrap">
+    <p class="eyebrow">Let's talk automation</p>
+    <h2 class="big">Get in touch.</h2>
+    <p class="links">
+      <a href="mailto:Abidifedi3@gmail.com">Email <span aria-hidden="true">&#8599;</span></a>
+      <a href="https://www.linkedin.com/in/fadi-abidi-23a277118/" rel="noopener" target="_blank">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+      <a href="https://github.com/fadi-abidi" rel="noopener" target="_blank">GitHub <span aria-hidden="true">&#8599;</span></a>
+    </p>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">&copy; <span id="year">2026</span> Fadi Abidi. Ariana, Tunisia.</div>
+  <div class="wrap">&copy; <span id="year">2026</span> Fadi Abidi &middot; Ariana, Tunisia</div>
 </footer>
 <script src="script.js"></script>
 </body>
