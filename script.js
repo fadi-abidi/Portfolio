@@ -10,7 +10,7 @@ var count = document.getElementById('count');
 function applyFilter(cat) {
   var shown = 0;
   cards.forEach(function (c) {
-    var ok = cat === 'all' || c.getAttribute('data-cat') === cat;
+    var ok = cat === 'all' || (c.getAttribute('data-cat') || '').split(' ').indexOf(cat) !== -1;
     c.hidden = !ok;
     if (ok) { shown++; }
   });

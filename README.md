@@ -1,10 +1,10 @@
 # Fadi Abidi | Portfolio
 
-Personal portfolio of Fadi Abidi, Controls and Automation Engineer.
+Personal portfolio of Fadi Abidi, Automation and Robotics Engineer.
 
 Live site: https://fadi-abidi.github.io/Portfolio/
 
-It shows commissioning work on photovoltaic production lines, machines designed during my studies and internships, my first lab automation scripts in Python and my volunteering with the COVID-19 Task Force in Jendouba.
+It shows robot and vision integration on photovoltaic production lines, PLC and HMI design, machines I designed during my studies and internships, my first lab automation scripts in Python and my volunteering with the COVID-19 Task Force in Jendouba.
 
 ## Structure
 

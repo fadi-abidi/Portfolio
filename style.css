@@ -108,6 +108,15 @@ details p{margin:10px 0 0;font-size:16px}
 .card.feature .slides,.vol .slides{position:absolute;inset:0}
 .vol .slides figure{aspect-ratio:auto;height:100%}
 
+/* Earlier student projects */
+.early-title{font-size:26px;letter-spacing:-.03em;margin:56px 0 14px}
+.early{border-top:1px solid var(--line)}
+.early .row{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.early .yr{font:700 13px var(--mono);color:var(--blue);letter-spacing:.08em}
+.early b{font-size:19px;letter-spacing:-.02em}
+.early p{margin:4px 0 0;color:var(--muted);font-size:16px;max-width:70ch}
+.early .go{font-size:15px;white-space:nowrap}
+
 /* Gallery */
 .gallery{position:relative;background:var(--card2);border-bottom:1px solid var(--line);overflow:hidden}
 .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;height:100%}
@@ -200,6 +209,7 @@ footer{padding:28px 0 40px;font:13px var(--mono);color:var(--muted)}
   .card .body{padding:20px}
   .vol .body{padding:22px}
   .links{font-size:22px}
+  .early .row{grid-template-columns:1fr;gap:6px}
 }
 @media (prefers-reduced-motion: reduce){
   .flow{animation:none;stroke-dasharray:none}

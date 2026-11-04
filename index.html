@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fadi Abidi | Controls & Automation Engineer</title>
-<meta name="description" content="Fadi Abidi, Controls and Automation Engineer based in Ariana, Tunisia. PLC programming, robot integration and commissioning of automated production lines across the MENA region, Europe and Asia.">
+<title>Fadi Abidi | Automation & Robotics Engineer</title>
+<meta name="description" content="Fadi Abidi, Automation and Robotics Engineer based in Ariana, Tunisia. Robot and vision integration, PLC and HMI design with TwinCAT 3 and TIA Portal, machine design in SolidWorks and start-up of production lines across the MENA region, Europe and Asia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -30,18 +30,18 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Controls / Automation / Commissioning</p>
+      <p class="eyebrow">Robotics / PLC / Machine design</p>
       <h1>Fadi<br>Abidi</h1>
-      <p class="role">Controls &amp; Automation Engineer</p>
-      <p class="hook">I make automated production lines run.</p>
+      <p class="role">Automation &amp; Robotics Engineer</p>
+      <p class="hook">From CAD and PLC logic to robots running on the shop floor.</p>
       <div class="btns">
         <a class="btn primary" href="#projects">Explore projects <span aria-hidden="true">&#8600;</span></a>
         <a class="btn" href="assets/docs/Fadi_Abidi_CV.pdf" target="_blank" rel="noopener">Download CV <span aria-hidden="true">&#8595;</span></a>
       </div>
-      <p class="stack"><b>Core stack</b> Beckhoff TwinCAT 3 &middot; Siemens TIA Portal &middot; EtherCAT &middot; ABB, Estun and Epson robots &middot; Machine vision &middot; Python</p>
+      <p class="stack"><b>Core stack</b> ABB, Estun and Epson robots &middot; Cognex, Keyence and Hikrobot vision &middot; Beckhoff TwinCAT 3 &middot; Siemens TIA Portal &middot; EtherCAT &middot; SolidWorks</p>
     </div>
     <div class="hero-art">
-      <svg class="rung" viewBox="0 0 520 300" role="img" aria-label="A ladder logic rung: SAFETY_OK and LINE_READY contacts power the LINE_RUNNING coil">
+      <svg class="rung" viewBox="0 0 520 300" role="img" aria-label="A ladder logic rung: SAFETY_OK and VISION_OK contacts power the ROBOT_PICK coil">
         <line x1="24" y1="30" x2="24" y2="270" stroke="var(--blue)" stroke-width="5"/>
         <line x1="496" y1="30" x2="496" y2="270" stroke="var(--blue)" stroke-width="5"/>
         <path d="M24 150 H120 M170 150 H270 M320 150 H410 M462 150 H496" stroke="var(--wire)" stroke-width="3" fill="none"/>
@@ -53,12 +53,12 @@
         <circle cx="436" cy="150" r="26" fill="var(--blue)"/>
         <circle cx="436" cy="150" r="14" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/>
         <text x="145" y="108" text-anchor="middle" class="svt">SAFETY_OK</text>
-        <text x="295" y="108" text-anchor="middle" class="svt">LINE_READY</text>
-        <text x="436" y="108" text-anchor="middle" class="svt">LINE_RUNNING</text>
+        <text x="295" y="108" text-anchor="middle" class="svt">VISION_OK</text>
+        <text x="436" y="108" text-anchor="middle" class="svt">ROBOT_PICK</text>
       </svg>
       <span class="chip c1">RUNG 001</span>
       <span class="chip c2">CYCLE 10 ms</span>
-      <span class="chip c3">STATE / RUNNING</span>
+      <span class="chip c3">ROBOT / PICK</span>
       <figure class="portrait">
         <img src="assets/photo.png" alt="Portrait of Fadi Abidi" onerror="this.parentNode.classList.add('nophoto');this.remove()">
         <span class="mono-fa">FA</span>
@@ -68,10 +68,10 @@
 </section>
 
 <section class="numbers wrap" aria-label="Key figures">
-  <div><b>4</b><span>complete PV production lines commissioned</span></div>
-  <div><b>500 MW</b><span>largest solar module plant worked on</span></div>
-  <div><b>6</b><span>years in industry</span></div>
-  <div><b>3</b><span>regions: MENA, Europe and Asia</span></div>
+  <div><b>3</b><span>robot brands integrated: ABB, Estun and Epson SCARA</span></div>
+  <div><b>3</b><span>vision systems integrated: Cognex, Keyence and Hikrobot</span></div>
+  <div><b>4</b><span>complete production lines brought into production</span></div>
+  <div><b>6</b><span>years in industry across MENA, Europe and Asia</span></div>
 </section>
 
 <section id="projects" class="block">
@@ -79,119 +79,57 @@
     <p class="eyebrow">Selected work / 2017 to 2026</p>
     <div class="head">
       <h2>Projects</h2>
-      <p class="sub">Lines commissioned on customer sites, machines designed and built from scratch and the code I write to learn.</p>
+      <p class="sub">Robots and vision on production lines, PLC and HMI design and machines I designed from the first sketch.</p>
     </div>
     <div class="filters" role="group" aria-label="Filter projects">
       <button class="f on" data-f="all" type="button">All</button>
-      <button class="f" data-f="field" type="button">Field</button>
-      <button class="f" data-f="control" type="button">Control</button>
-      <button class="f" data-f="design" type="button">Design</button>
-      <button class="f" data-f="electronics" type="button">Electronics</button>
-      <button class="f" data-f="maintenance" type="button">Maintenance</button>
+      <button class="f" data-f="robotics" type="button">Robotics</button>
+      <button class="f" data-f="plc" type="button">PLC and HMI</button>
+      <button class="f" data-f="design" type="button">Machine design</button>
+      <button class="f" data-f="process" type="button">Process</button>
       <button class="f" data-f="python" type="button">Python</button>
     </div>
     <p class="count" id="count" aria-live="polite"></p>
     <div class="cards">
 
-      <article class="card feature" data-cat="field">
+      <article class="card feature" data-cat="robotics plc">
         <div class="gallery">
           <div class="slides">
-            <figure class="photo"><img src="assets/img/pv-hall.jpg" alt="Solar module production hall with conveyors during installation" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/pv-robot.jpg" alt="Fadi next to an industrial robot on a solar line" loading="lazy"></figure>
-            <figure><img src="assets/img/pv-site.jpg" alt="Fadi on site in front of a production machine" loading="lazy"></figure>
-            <figure><img src="assets/img/pv-line.jpg" alt="Fadi on site with the production line behind him" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/pv-robot.jpg" alt="Fadi with the teach pendant next to an Estun industrial robot on a solar module line" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/pv-hall.jpg" alt="Solar module production hall with conveyors and robots during installation" loading="lazy"></figure>
           </div>
         </div>
         <div class="body">
-          <p class="meta"><span>FLD-01</span><span>Field &middot; 2024 to present</span></p>
-          <h3>4 complete photovoltaic production lines</h3>
-          <p class="lead">Commissioned across the MENA region, Europe and Asia, including a 500 MW solar module plant.</p>
-          <p>Setup and commissioning of MTS stringer lines, from factory acceptance at headquarters to start-up on customer sites, with robots, machine vision, servo drives and EtherCAT networks working as one system.</p>
-          <p class="tags"><i>Beckhoff TwinCAT 3</i><i>EtherCAT</i><i>ABB, Estun, Epson SCARA</i><i>Cognex, Keyence, Hikrobot</i><i>Servo drives</i></p>
+          <p class="meta"><span>ROB-01</span><span>Robotics &middot; 2024 to present</span></p>
+          <h3>Robot and vision integration on 4 photovoltaic lines</h3>
+          <p class="lead">ABB, Estun and Epson SCARA robots working with machine vision, servo drives and EtherCAT on complete solar module lines across the MENA region, Europe and Asia.</p>
+          <p>From factory acceptance at headquarters to start-up on customer sites, including a 500 MW solar module plant.</p>
+          <p class="tags"><i>ABB, Estun, Epson SCARA</i><i>Vision-guided pick and place</i><i>Cognex, Keyence, Hikrobot</i><i>Beckhoff TwinCAT 3</i><i>EtherCAT</i></p>
           <details><summary>View details</summary>
-            <p>My part covers PLC programming, robot integration (ABB layup robots, Estun robots and Epson SCARA robots inside the stringers), vision, drives and networks, then troubleshooting and training the customer's teams at handover. When a line stops, I trace the cause across PLC logic, drives, vision and power supply and turn the fix into a standard for similar installations. On one line I integrated a UPS to keep the servo drive control circuits powered through mains outages.</p>
+            <p>I program the ABB and Estun robots for vision-guided pick and place and set up their communication with the PLC: handshakes, part data and fault handling. I calibrate the cameras and inspection routines, program the PLC sequences in TwinCAT 3 and configure the EtherCAT networks and servo drives. When a line stops, I trace the cause across robot, PLC, drives, vision and power supply and turn the fix into a standard for similar installations. On one line I integrated a UPS to keep the servo drive control circuits powered through mains outages.</p>
           </details>
         </div>
       </article>
 
-      <article class="card" data-cat="field">
+      <article class="card" data-cat="plc design">
         <div class="gallery">
           <div class="slides">
-            <figure class="photo"><img src="assets/img/sky-lift.jpg" alt="Lift and structure of the elevated sky conveyor" loading="lazy"></figure>
-            <figure><img src="assets/img/sky-site.jpg" alt="Fadi on site during the sky conveyor commissioning" loading="lazy"></figure>
-          </div>
-        </div>
-        <div class="body">
-          <p class="meta"><span>FLD-02</span><span>Field &middot; 2025</span></p>
-          <h3>Sky conveyor extension</h3>
-          <p>An elevated conveyor with a lift at each end, added to a running solar module line.</p>
-          <p class="tags"><i>Electrical installation</i><i>PLC I/O</i><i>Commissioning</i><i>Operator training</i></p>
-          <details><summary>View details</summary>
-            <p>I installed it electrically, wired its inputs and outputs to the line's PLC and modified the program to integrate it into the production flow. Then I commissioned it, tested the lifts and sensors and trained the operators.</p>
-          </details>
-        </div>
-      </article>
-
-      <article class="card" data-cat="python">
-        <div class="gallery single">
-          <div class="slides">
-            <figure><img src="assets/img/plr-deck.jpg" alt="Simulated Hamilton STARlet deck in the PyLabRobot Visualizer" loading="lazy"></figure>
-          </div>
-        </div>
-        <div class="body">
-          <p class="meta"><span>SW-04</span><span>Python &middot; 2026</span></p>
-          <h3>PyLabRobot first steps</h3>
-          <p>My first lab automation protocols in Python: a simulated Hamilton STARlet liquid handler that picks up tips and moves liquid between the wells of a 96-well plate.</p>
-          <p class="tags"><i>Python</i><i>PyLabRobot</i><i>Simulation</i><i>Lab automation</i></p>
-          <details><summary>View details</summary>
-            <p>Three scripts: a first transfer from well A1 to A2, the same protocol shown live in the PyLabRobot Visualizer and my own loop that fills a whole plate row. Coming from PLCs, the backend works like simulation mode in TwinCAT: the same protocol runs on the simulator or on a real robot.</p>
-          </details>
-          <div class="links-row"><a class="go" href="https://github.com/fadi-abidi/pylabrobot-first-steps" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">&#8599;</span></a></div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="electronics">
-        <div class="gallery">
-          <div class="slides">
-            <figure class="photo"><img src="assets/img/mq-portrait.jpg" alt="Fadi in his ESD coat at Marquardt Tunisia" loading="lazy"></figure>
-            <figure><img src="assets/img/mq-applicator.jpg" alt="Selective coating applicator of the robot above a fixture of boards" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/mq-uv-fixture.jpg" alt="Coated boards on their fixture under UV light, showing the coated areas" loading="lazy"></figure>
-            <figure><img src="assets/img/mq-uv-panel.jpg" alt="Coated board panel glowing under UV light inside the coating machine" loading="lazy"></figure>
-            <figure><img src="assets/img/mq-program.jpg" alt="Coating program in the robot software with spot steps, dispense height and duration" loading="lazy"></figure>
-            <figure><img src="assets/img/mq-flow-scale.jpg" alt="Precision scale weighing the coating material dispensed in a cup" loading="lazy"></figure>
-            <figure><img src="assets/img/mq-flow-notes.jpg" alt="Hand-written weights and pressure settings from the flow calibration" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/mq-gauge.jpg" alt="Digital indicator measuring the height of a press-fit pin" loading="lazy"></figure>
-          </div>
-        </div>
-        <div class="body">
-          <p class="meta"><span>PRC-03</span><span>Electronics &middot; 2022 to 2024</span></p>
-          <h3>Conformal coating and press-fit</h3>
-          <p>At Marquardt Tunisia I ran the conformal coating and press-fit processes for automotive electronic boards.</p>
-          <p class="tags"><i>Nordson Asymtek coating robot</i><i>UV inspection</i><i>Flow calibration</i><i>Press-fit</i></p>
-          <details><summary>View details</summary>
-            <p>On the selective coating robot I edited the coating programs (spot and line patterns, dispense height and time), calibrated the material flow by weighing the coating dispensed at each pressure setting and checked the coverage of every panel under UV light. On the press-fit machine I checked the pin insertion height with a digital indicator. I also handled troubleshooting, preventive maintenance and engineering changes on both processes.</p>
-          </details>
-        </div>
-      </article>
-
-      <article class="card" data-cat="control">
-        <div class="gallery">
-          <div class="slides">
-            <figure><img src="assets/img/pou-line.jpg" alt="SolidWorks model of the full weighing, labeling and packing line" loading="lazy"></figure>
+            <figure><img src="assets/img/pou-layout.jpg" alt="SolidWorks layout of the line stations: weighing conveyor, labeler, netting machine and outfeed" loading="lazy"></figure>
+            <figure><img src="assets/img/pou-logic.jpg" alt="TIA Portal ladder logic: the load cell signal scaled with NORM_X and SCALE_X, then IN_RANGE and OUT_RANGE to accept or reject each crate" loading="lazy"></figure>
+            <figure><img src="assets/img/pou-hmi.jpg" alt="HMI line screen with conveyors, sensors and the live weighing value" loading="lazy"></figure>
+            <figure><img src="assets/img/pou-hmi-controls.jpg" alt="HMI control screen with cycle modes, start, stop and emergency stop" loading="lazy"></figure>
+            <figure><img src="assets/img/pou-grafcet.jpg" alt="GRAFCET of the line sequence" loading="lazy"></figure>
             <figure class="photo"><img src="assets/img/pou-cad.jpg" alt="SolidWorks close-up of the conveyors and the netting station" loading="lazy"></figure>
             <figure class="photo"><img src="assets/img/pou-station.jpg" alt="The real packing station at the plant" loading="lazy"></figure>
-            <figure><img src="assets/img/pou-hmi.jpg" alt="TIA Portal HMI screen of the line with conveyors, sensors and weighing value" loading="lazy"></figure>
-            <figure><img src="assets/img/pou-grafcet-sketch.jpg" alt="Hand-drawn GRAFCET of the line sequence" loading="lazy"></figure>
-            <figure><img src="assets/img/pou-grafcet.jpg" alt="Final GRAFCET of the line sequence" loading="lazy"></figure>
           </div>
         </div>
         <div class="body">
-          <p class="meta"><span>CTL-05</span><span>Control &middot; 2020</span></p>
-          <h3>Weighing, labeling and packing line migration</h3>
-          <p>Final-year engineering project with a teammate at a poultry plant. The line ran on hard-wired logic and a failing controller whose spare boards were no longer sold, so we migrated it to a Siemens S7-1200 PLC with a new HMI.</p>
-          <p class="tags"><i>Siemens S7-1200</i><i>TIA Portal</i><i>GRAFCET</i><i>SolidWorks</i></p>
+          <p class="meta"><span>PLC-02</span><span>PLC and design &middot; 2020</span></p>
+          <h3>Weighing, labeling and packing line: PLC and HMI design</h3>
+          <p>Final-year engineering project with a teammate at a poultry plant. The line ran on hard-wired logic and a failing controller whose spare boards were no longer sold, so we redesigned its control around a Siemens S7-1200 PLC with a new HMI.</p>
+          <p class="tags"><i>Siemens S7-1200</i><i>TIA Portal</i><i>GRAFCET</i><i>Ladder</i><i>HMI</i><i>SolidWorks</i></p>
           <details><summary>View details</summary>
-            <p>The line weighs crates of chicken, rejects any crate outside the weight range, labels the good ones and packs them in net. I wrote the GRAFCET sequence and the I/O list, programmed the PLC, built the TIA Portal HMI with line, alarm and start and stop screens, designed the mechanics in SolidWorks with the conveyor motor sizing and tested the whole system.</p>
+            <p>The line weighs crates of chicken, rejects any crate outside the weight window, labels the good ones and packs them in net. I wrote the GRAFCET sequence and the I/O list and programmed the PLC: the load cell signal is scaled with NORM_X and SCALE_X, then IN_RANGE and OUT_RANGE blocks accept or reject each crate. I built the HMI with line, alarm and control screens (continuous and single cycle, start, stop and emergency stop), designed the mechanics in SolidWorks with the conveyor motor sizing and tested the whole system.</p>
           </details>
           <div class="links-row"><a class="go" href="assets/docs/poulina-final-project-report.pdf" target="_blank" rel="noopener">Read the report (PDF) <span aria-hidden="true">&#8599;</span></a></div>
         </div>
@@ -208,10 +146,10 @@
           </div>
         </div>
         <div class="body">
-          <p class="meta"><span>MEC-06</span><span>Design &middot; 2019</span></p>
+          <p class="meta"><span>MEC-03</span><span>Machine design &middot; 2019</span></p>
           <h3>Mobile hydraulic car lift</h3>
           <p>Internship at New Formation: a mobile lift for car body and restoration work, designed to raise a 2,700 kg vehicle to 1,025 mm.</p>
-          <p class="tags"><i>SolidWorks</i><i>Hydraulics</i><i>Strength of materials</i><i>Manufacturing</i></p>
+          <p class="tags"><i>SolidWorks</i><i>Drawing package</i><i>Hydraulic sizing</i><i>Strength of materials</i></p>
           <details><summary>View details</summary>
             <p>I compared three solutions with a weighted decision matrix, designed the lift in SolidWorks and produced the full drawing package (an assembly drawing and 17 detailed part drawings for manufacturing). I sized the hydraulic system (cylinder, working pressure, gear pump and piping), estimated the cost, followed the manufacturing in the workshop and wrote the maintenance and troubleshooting guide.</p>
           </details>
@@ -219,80 +157,78 @@
         </div>
       </article>
 
-      <article class="card" data-cat="electronics">
+      <article class="card" data-cat="robotics process">
         <div class="gallery">
           <div class="slides">
-            <figure class="photo"><img src="assets/img/trk-cad1.jpg" alt="SolidWorks assembly of the dual-axis solar tracker" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/trk-cad2.jpg" alt="Second SolidWorks view of the solar tracker" loading="lazy"></figure>
-            <figure><img src="assets/img/trk-proteus.jpg" alt="Proteus ISIS schematic with four LDRs, two servos, an Arduino and an LCD" loading="lazy"></figure>
-            <figure><img src="assets/img/trk-proto.jpg" alt="Assembled solar tracker prototype" loading="lazy"></figure>
+            <figure><img src="assets/img/mq-applicator.jpg" alt="Selective coating applicator of the robot above a fixture of boards" loading="lazy"></figure>
+            <figure><img src="assets/img/mq-program.jpg" alt="Coating program in the robot software with spot steps, dispense height and duration" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/mq-uv-fixture.jpg" alt="Coated boards on their fixture under UV light, showing the coated areas" loading="lazy"></figure>
+            <figure><img src="assets/img/mq-uv-panel.jpg" alt="Coated board panel glowing under UV light inside the coating machine" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/mq-gauge.jpg" alt="Digital indicator measuring the height of a press-fit pin" loading="lazy"></figure>
           </div>
         </div>
         <div class="body">
-          <p class="meta"><span>ELC-07</span><span>Electronics &middot; 2019</span></p>
-          <h3>Dual-axis solar tracker</h3>
-          <p>A fourth-year project at ULT with a team of four: an autonomous prototype that keeps a solar panel facing the sun.</p>
-          <p class="tags"><i>Arduino</i><i>LDR sensors</i><i>Servo motors</i><i>Proteus ISIS</i><i>SolidWorks</i></p>
+          <p class="meta"><span>PRC-04</span><span>Robotics and process &middot; 2022 to 2024</span></p>
+          <h3>Coating robot programming and press-fit</h3>
+          <p>At Marquardt Tunisia I ran the conformal coating and press-fit processes for automotive electronic boards.</p>
+          <p class="tags"><i>Nordson Asymtek coating robot</i><i>Coating programs</i><i>UV inspection</i><i>Flow calibration</i><i>Press-fit</i></p>
           <details><summary>View details</summary>
-            <p>Four LDR light sensors feed an Arduino, which drives two servo motors on the horizontal and vertical axes. We designed the mechanics in SolidWorks, simulated the electronics in Proteus ISIS, cut the parts on a CNC laser cutter and then assembled and programmed the prototype.</p>
-          </details>
-          <div class="links-row"><a class="go" href="assets/docs/solar-tracker-report.pdf" target="_blank" rel="noopener">Read the report (PDF) <span aria-hidden="true">&#8599;</span></a></div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="design">
-        <div class="gallery">
-          <div class="slides">
-            <figure><img src="assets/img/coin-exploded.jpg" alt="SolidWorks exploded view of the coin sorter" loading="lazy"></figure>
-            <figure><img src="assets/img/coin-tubes.jpg" alt="SolidWorks model of the coin tube holder" loading="lazy"></figure>
-          </div>
-        </div>
-        <div class="body">
-          <p class="meta"><span>MEC-08</span><span>Design &middot; 2018</span></p>
-          <h3>Coin sorter and counter</h3>
-          <p>A year-end project at ULT with a team of four: a machine that sorts mixed Tunisian coins by diameter, counts them and delivers them in batches.</p>
-          <p class="tags"><i>SolidWorks</i><i>Arduino Mega</i><i>Sensors</i><i>LCD</i></p>
-          <details><summary>View details</summary>
-            <p>We designed the whole machine in SolidWorks (frame, sorting system, tube holder, basket and door) and built the control around an Arduino Mega with presence sensors, a 24 V motor, push buttons and an LCD display.</p>
-          </details>
-          <div class="links-row"><a class="go" href="assets/docs/coin-sorter-report.pdf" target="_blank" rel="noopener">Read the report (PDF) <span aria-hidden="true">&#8599;</span></a></div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="electronics">
-        <div class="gallery">
-          <div class="slides">
-            <figure class="photo"><img src="assets/img/tis-bench.jpg" alt="Electronic board connected to a National Instruments CAN test bench" loading="lazy"></figure>
-            <figure><img src="assets/img/tis-daq.jpg" alt="National Instruments data acquisition chassis" loading="lazy"></figure>
-          </div>
-        </div>
-        <div class="body">
-          <p class="meta"><span>ELC-09</span><span>Electronics &middot; 2018</span></p>
-          <h3>SMT line and board testing</h3>
-          <p>Internship at ALL Circuits on an SMT line for automotive electronic boards.</p>
-          <p class="tags"><i>SMT</i><i>SPI and AOI</i><i>LabVIEW</i><i>CAN</i><i>National Instruments</i></p>
-          <details><summary>View details</summary>
-            <p>I followed the whole process: solder paste printing and inspection (SPI), pick-and-place machines (Fuji, Siemens Siplace), reflow oven and AOI. I took part in feeder calibration and preventive maintenance and tested a board's LEDs with LabVIEW on a CAN test bench using National Instruments hardware.</p>
+            <p>On the selective coating robot I edited the coating programs (spot and line patterns, dispense height and time), calibrated the material flow by weighing the coating dispensed at each pressure setting and checked the coverage of every panel under UV light. On the press-fit machine I checked the pin insertion height with a digital indicator. I also handled troubleshooting, preventive maintenance and engineering changes on both processes.</p>
           </details>
         </div>
       </article>
 
-      <article class="card" data-cat="maintenance">
+      <article class="card" data-cat="plc">
+        <div class="gallery">
+          <div class="slides">
+            <figure class="photo"><img src="assets/img/sky-lift.jpg" alt="Lift and structure of the elevated sky conveyor" loading="lazy"></figure>
+          </div>
+        </div>
+        <div class="body">
+          <p class="meta"><span>PLC-05</span><span>PLC &middot; 2025</span></p>
+          <h3>Sky conveyor extension</h3>
+          <p>An elevated conveyor with a lift at each end, added to a running solar module line.</p>
+          <p class="tags"><i>PLC program changes</i><i>I/O wiring</i><i>Electrical installation</i><i>Commissioning</i></p>
+          <details><summary>View details</summary>
+            <p>I installed it electrically, wired its inputs and outputs to the line's PLC and modified the program to integrate it into the production flow. Then I commissioned it, tested the lifts and sensors and trained the operators.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="card" data-cat="python robotics">
+        <div class="gallery">
+          <div class="slides">
+            <figure><img src="assets/img/plr-deck.jpg" alt="Simulated Hamilton STARlet deck in the PyLabRobot Visualizer" loading="lazy"></figure>
+          </div>
+        </div>
+        <div class="body">
+          <p class="meta"><span>SW-06</span><span>Python &middot; 2026</span></p>
+          <h3>PyLabRobot first steps</h3>
+          <p>My first lab automation protocols in Python: a simulated Hamilton STARlet liquid handler that picks up tips and moves liquid between the wells of a 96-well plate.</p>
+          <p class="tags"><i>Python</i><i>PyLabRobot</i><i>Simulation</i><i>Lab automation</i></p>
+          <details><summary>View details</summary>
+            <p>Three scripts: a first transfer from well A1 to A2, the same protocol shown live in the PyLabRobot Visualizer and my own loop that fills a whole plate row. Coming from PLCs, the backend works like simulation mode in TwinCAT: the same protocol runs on the simulator or on a real robot.</p>
+          </details>
+          <div class="links-row"><a class="go" href="https://github.com/fadi-abidi/pylabrobot-first-steps" target="_blank" rel="noopener">View code on GitHub <span aria-hidden="true">&#8599;</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="process">
         <div class="gallery">
           <div class="slides">
             <figure class="photo"><img src="assets/img/sot-cabinet.jpg" alt="Machine electrical cabinet with a safety relay, contactors, circuit breakers and servo drives" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/sot-servo.jpg" alt="Servo motor and gearbox on a production machine" loading="lazy"></figure>
+            <figure class="photo"><img src="assets/img/sot-drive.jpg" alt="Drive side of a production machine with gearbox, pulleys and pneumatics" loading="lazy"></figure>
             <figure class="photo"><img src="assets/img/sot-pack.jpg" alt="Sealing head of the packaging machine with wipe packs passing below" loading="lazy"></figure>
             <figure class="photo"><img src="assets/img/sot-press.jpg" alt="Press station flattening wipe packs on the packaging line" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/sot-drive.jpg" alt="Drive side of a production machine with gearbox, pulleys and pneumatics" loading="lazy"></figure>
-            <figure class="photo"><img src="assets/img/sot-servo.jpg" alt="Servo motor and gearbox on a production machine" loading="lazy"></figure>
             <figure class="photo"><img src="assets/img/sot-lube.jpg" alt="Pressure regulator and reservoir unit inside a production machine" loading="lazy"></figure>
           </div>
         </div>
         <div class="body">
-          <p class="meta"><span>MNT-10</span><span>Maintenance &middot; 2017</span></p>
-          <h3>Preventive maintenance plan for a wet wipes plant</h3>
+          <p class="meta"><span>MNT-07</span><span>Maintenance &middot; 2017</span></p>
+          <h3>Preventive maintenance plan for automated machines</h3>
           <p>Final-year project at ISET Jendouba in the maintenance department of SO.TU.LIN in El Kef, a wet wipes manufacturer preparing for ISO 9001 certification.</p>
-          <p class="tags"><i>FMECA</i><i>Pareto analysis</i><i>Preventive maintenance</i><i>Pneumatics</i><i>Servo drives</i></p>
+          <p class="tags"><i>FMECA</i><i>Pareto analysis</i><i>Servo drives</i><i>Pneumatics</i><i>Preventive maintenance</i></p>
           <details><summary>View details</summary>
             <p>I applied FMECA to four production machines: the large and small format cutting machines, the packaging machine and the lid applicator. There was no breakdown history, so I explained the method to the maintenance technicians and rated each failure mode with them for frequency, severity and detection. I broke each machine down into its mechanical, electrical, pneumatic and hydraulic subsystems, ranked the critical components with a Pareto analysis and wrote a preventive maintenance plan with actions, intervals and spare parts, plus checklists for the technicians.</p>
           </details>
@@ -300,6 +236,25 @@
         </div>
       </article>
 
+    </div>
+
+    <h3 class="early-title">Earlier student projects</h3>
+    <div class="early">
+      <div class="row">
+        <span class="yr">2019</span>
+        <div><b>Dual-axis solar tracker</b><p>Team of four at ULT. Four LDR sensors and an Arduino drive two servo axes to keep a panel facing the sun, with the mechanics designed in SolidWorks and the electronics simulated in Proteus.</p></div>
+        <a class="go" href="assets/docs/solar-tracker-report.pdf" target="_blank" rel="noopener">Report <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <div class="row">
+        <span class="yr">2018</span>
+        <div><b>Coin sorter and counter</b><p>Team of four at ULT. A machine that sorts mixed coins by diameter, counts them and delivers them in batches, designed in SolidWorks and controlled by an Arduino Mega.</p></div>
+        <a class="go" href="assets/docs/coin-sorter-report.pdf" target="_blank" rel="noopener">Report <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <div class="row">
+        <span class="yr">2018</span>
+        <div><b>SMT line and board testing</b><p>Internship at ALL Circuits on an SMT line for automotive boards: SPI, pick-and-place, reflow and AOI, plus LED testing with LabVIEW on a CAN test bench.</p></div>
+        <span></span>
+      </div>
     </div>
   </div>
 </section>
@@ -318,8 +273,8 @@
         <p class="meta"><span>Jul 2024 to present</span><span class="now">Current</span></p>
         <h4>Mondragon Assembly Group</h4>
         <p class="rl">Automation Engineer</p>
-        <p>PLC programming and commissioning of photovoltaic production lines with Beckhoff TwinCAT 3 and Siemens TIA Portal. Robot integration (ABB, Estun and Epson SCARA), machine vision (Cognex, Keyence and Hikrobot), EtherCAT, PROFINET and EtherNet/IP networks, servo drives and HMI development.</p>
-        <p>4 complete lines commissioned across the MENA region, Europe and Asia, including a 500 MW solar module plant.</p>
+        <p>Robot programming and integration (ABB and Estun for vision-guided pick and place, Epson SCARA), machine vision (Cognex, Keyence and Hikrobot) and PLC programming with Beckhoff TwinCAT 3 and Siemens TIA Portal on photovoltaic production lines. EtherCAT, PROFINET and EtherNet/IP networks, servo drives and HMI development.</p>
+        <p>4 complete lines brought into production across the MENA region, Europe and Asia, including a 500 MW solar module plant. <a href="#projects">See the project</a>.</p>
       </article>
       <article class="tcard">
         <p class="meta"><span>Oct 2022 to Jun 2024</span></p>
@@ -461,15 +416,15 @@
     <p class="eyebrow">Toolkit</p>
     <div class="head">
       <h2>Skills</h2>
-      <p class="sub">What I use on site and at my desk.</p>
+      <p class="sub">What I use at my desk and on the shop floor.</p>
     </div>
     <div class="skills">
+      <div class="skill"><h4>Robotics</h4><p>ABB (RobotStudio), Estun, Epson SCARA, KUKA KR 210, vision-guided pick and place, robot to PLC handshakes</p></div>
+      <div class="skill"><h4>Machine vision</h4><p>Cognex VisionPro, Keyence, Hikrobot MVS, camera calibration, inspection routines, robot guidance</p></div>
       <div class="skill"><h4>PLC and control</h4><p>Beckhoff TwinCAT 3, Siemens TIA Portal (S7-1200, S7-1500), Structured Text, Ladder, SFC and GRAFCET, object-oriented PLC programming</p></div>
-      <div class="skill"><h4>Robotics</h4><p>ABB (RobotStudio), Estun, Epson SCARA, KUKA KR 210, pick and place, vision-guided handling, robot to PLC handshakes</p></div>
-      <div class="skill"><h4>Machine vision</h4><p>Cognex VisionPro, Keyence, Hikrobot MVS, calibration, inspection, robot guidance</p></div>
+      <div class="skill"><h4>Machine design</h4><p>SolidWorks, drawing packages, motor and hydraulic sizing, EPLAN, schematic reading, Proteus ISIS, Arduino</p></div>
       <div class="skill"><h4>Networks and drives</h4><p>EtherCAT, PROFINET, EtherNet/IP, Modbus TCP, Wireshark, Yaskawa and Inovance servo drives</p></div>
-      <div class="skill"><h4>HMI and safety</h4><p>TwinCAT HMI, WinCC, InTouch, IX Developer, EasyBuilder Pro, Beckhoff TwinSAFE, EPLAN, schematic reading</p></div>
-      <div class="skill"><h4>Design and electronics</h4><p>SolidWorks, Proteus ISIS, Arduino, LabVIEW, hydraulic sizing, soldering and component-level repair</p></div>
+      <div class="skill"><h4>HMI and safety</h4><p>TwinCAT HMI, WinCC, InTouch, IX Developer, EasyBuilder Pro, Beckhoff TwinSAFE, safety interlocks</p></div>
       <div class="skill"><h4>Python</h4><p>Scripts for test tools, log analysis and TCP and serial communication, PyLabRobot, Git and GitHub</p></div>
       <div class="skill"><h4>Quality and Lean</h4><p>8D, PFMEA, FMECA, Ishikawa, 5 Whys, SPC, MSA, VSM, OEE, SMED</p></div>
     </div>
@@ -483,13 +438,13 @@
       <h2 class="big">Safety first. Then ready. Then run.</h2>
     </div>
     <div class="txt">
-      <p>I am an automation engineer at Mondragon Assembly Group, where I program, commission and support photovoltaic production lines for customers in several countries. Before that I worked in automotive and electronics plants on processes, maintenance and continuous improvement.</p>
-      <p>I like the moment when a machine that was only drawings and code starts to produce good parts. I am now learning to control robots and lab instruments with Python.</p>
+      <p>I am an automation engineer at Mondragon Assembly Group, where I program and integrate robots, vision systems and PLCs on photovoltaic production lines and bring them into production for customers in several countries. Before that I worked in automotive and electronics plants on processes, maintenance and continuous improvement. During my studies I designed machines from the first sketch to the drawing package.</p>
+      <p>What I want to do more of is automation design and robotics: shaping a machine or a robot cell, writing its PLC and robot logic and seeing it produce good parts. I am also learning to control robots and lab instruments with Python.</p>
       <p class="mono">Languages: Arabic &middot; French (C1) &middot; English (C1)</p>
     </div>
   </div>
   <div class="wrap steps">
-    <div><b>01 / PROGRAM</b></div><div><b>02 / SIMULATE</b></div><div><b>03 / COMMISSION</b></div><div><b>04 / SUPPORT</b></div>
+    <div><b>01 / DESIGN</b></div><div><b>02 / PROGRAM</b></div><div><b>03 / SIMULATE</b></div><div><b>04 / COMMISSION</b></div>
   </div>
 </section>
 
