@@ -86,6 +86,9 @@ h2.big{font-size:clamp(40px,6vw,84px)}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .card{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
 .card[hidden]{display:none}
+.card{scroll-margin-top:84px}
+.card:target{outline:3px solid var(--blue);outline-offset:4px;animation:spot 2.4s ease-out 1 forwards}
+@keyframes spot{0%,60%{outline-color:var(--blue)}100%{outline-color:transparent}}
 .card .body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
 .meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--blue);margin:0 0 16px}
 .card h3{font-size:28px;margin-bottom:12px;line-height:1.05}

@@ -26,6 +26,19 @@ buttons.forEach(function (b) {
 });
 applyFilter('all');
 
+// Links to a project card: show all projects first if the card is filtered out
+document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+  var id = a.getAttribute('href').slice(1);
+  var target = id ? document.getElementById(id) : null;
+  if (!target || !target.classList.contains('card')) { return; }
+  a.addEventListener('click', function () {
+    if (target.hidden) {
+      buttons.forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-f') === 'all'); });
+      applyFilter('all');
+    }
+  });
+});
+
 // Photo galleries: arrows, dots and swipe (native scrolling)
 document.querySelectorAll('.gallery').forEach(function (g) {
   var track = g.querySelector('.slides');
