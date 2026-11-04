@@ -78,7 +78,7 @@ var lbImg = document.getElementById('lb-img');
 var lbCap = document.getElementById('lb-cap');
 var lbClose = document.getElementById('lb-close');
 if (lb && typeof lb.showModal === 'function') {
-  document.querySelectorAll('.slides img').forEach(function (img) {
+  document.querySelectorAll('.slides img, .early .thumbs img').forEach(function (img) {
     img.parentNode.addEventListener('click', function () {
       lbImg.src = img.src;
       lbImg.alt = img.alt;
@@ -106,4 +106,10 @@ if (toggle) {
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
+}
+
+// Robot cell illustration: hold still for people who prefer less motion
+var cell = document.querySelector('.cell');
+if (cell && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches && cell.pauseAnimations) {
+  cell.pauseAnimations();
 }

@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0B3FB5">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,26 +45,70 @@
       <p class="stack"><b>Core stack</b> ABB, Estun and Epson robots &middot; Cognex, Keyence and Hikrobot vision &middot; Beckhoff TwinCAT 3 &middot; Siemens TIA Portal &middot; EtherCAT &middot; SolidWorks</p>
     </div>
     <div class="hero-art">
-      <svg class="rung" viewBox="0 0 520 300" role="img" aria-label="A ladder logic rung: SAFETY_OK and VISION_OK contacts power the ROBOT_PICK coil">
-        <line x1="24" y1="30" x2="24" y2="270" stroke="var(--blue)" stroke-width="5"/>
-        <line x1="496" y1="30" x2="496" y2="270" stroke="var(--blue)" stroke-width="5"/>
-        <path d="M24 150 H120 M170 150 H270 M320 150 H410 M462 150 H496" stroke="var(--wire)" stroke-width="3" fill="none"/>
-        <path class="flow" d="M24 150 H120 M170 150 H270 M320 150 H410 M462 150 H496"/>
-        <line x1="120" y1="126" x2="120" y2="174" stroke="var(--ink)" stroke-width="4"/>
-        <line x1="170" y1="126" x2="170" y2="174" stroke="var(--ink)" stroke-width="4"/>
-        <line x1="270" y1="126" x2="270" y2="174" stroke="var(--ink)" stroke-width="4"/>
-        <line x1="320" y1="126" x2="320" y2="174" stroke="var(--ink)" stroke-width="4"/>
-        <circle cx="436" cy="150" r="26" fill="var(--blue)"/>
-        <circle cx="436" cy="150" r="14" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/>
-        <text x="145" y="108" text-anchor="middle" class="svt">SAFETY_OK</text>
-        <text x="295" y="108" text-anchor="middle" class="svt">VISION_OK</text>
-        <text x="436" y="108" text-anchor="middle" class="svt">ROBOT_PICK</text>
+      <svg class="cell" viewBox="0 0 520 400" role="img" aria-label="Illustration of a robot cell: a vision camera checks a part on a conveyor and a robot arm picks it">
+        <line x1="10" y1="380" x2="250" y2="380" stroke="var(--wire)" stroke-width="2" stroke-dasharray="6 6"/>
+        <g class="cam">
+          <line x1="14" y1="46" x2="128" y2="46" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="92" y1="46" x2="92" y2="62" stroke="var(--ink)" stroke-width="4"/>
+          <rect x="74" y="60" width="36" height="26" rx="4" fill="var(--ink)"/>
+          <rect x="85" y="86" width="14" height="7" rx="2" fill="var(--blue)"/>
+          <polygon points="86,93 98,93 142,294 42,294" fill="var(--blue)" fill-opacity=".07" stroke="var(--blue)" stroke-opacity=".45" stroke-dasharray="4 5"/>
+        </g>
+        <g class="conveyor">
+          <rect x="30" y="330" width="7" height="50" fill="var(--ink)"/>
+          <rect x="166" y="330" width="7" height="50" fill="var(--ink)"/>
+          <rect x="14" y="318" width="176" height="15" rx="7.5" fill="var(--ink)"/>
+          <g fill="var(--card)"><circle cx="28" cy="325.5" r="3.5"/><circle cx="48" cy="325.5" r="3.5"/><circle cx="68" cy="325.5" r="3.5"/><circle cx="88" cy="325.5" r="3.5"/><circle cx="108" cy="325.5" r="3.5"/><circle cx="128" cy="325.5" r="3.5"/><circle cx="148" cy="325.5" r="3.5"/><circle cx="168" cy="325.5" r="3.5"/><circle cx="188" cy="325.5" r="3.5"/></g>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="-70 0;0 0;0 0;0 0;0 0;-70 0" keyTimes="0;0.2;0.5;0.6;0.995;1" dur="5s" repeatCount="indefinite"/>
+          <rect x="81" y="298" width="22" height="20" rx="2" fill="var(--blue)">
+            <animate attributeName="opacity" values="0;1;1;0;0;0" keyTimes="0;0.12;0.5;0.5;0.995;1" dur="5s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <rect x="74" y="292" width="36" height="32" fill="none" stroke="var(--run)" stroke-width="2.5" stroke-dasharray="5 4" opacity="0">
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2;0.24;0.46;0.5;1" dur="5s" repeatCount="indefinite"/>
+        </rect>
+        <g class="robot">
+          <rect x="158" y="362" width="84" height="18" rx="3" fill="var(--ink)"/>
+          <rect x="177" y="326" width="46" height="38" rx="9" fill="var(--blue)"/>
+          <g transform="translate(200,322)">
+            <g transform="rotate(3.3)">
+              <animateTransform attributeName="transform" type="rotate" values="3.3;3.3;-7.7;-7.7;3.3;3.3" keyTimes="0;0.28;0.48;0.6;0.8;1" dur="5s" repeatCount="indefinite"/>
+              <rect x="-15" y="-150" width="30" height="150" rx="15" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
+              <rect x="-4" y="-122" width="8" height="92" rx="4" fill="var(--blue)" fill-opacity=".3"/>
+              <g transform="translate(0,-150)">
+                <g transform="rotate(-12)">
+                  <animateTransform attributeName="transform" type="rotate" values="-12;-12;-34.1;-34.1;-12;-12" keyTimes="0;0.28;0.48;0.6;0.8;1" dur="5s" repeatCount="indefinite"/>
+                  <rect x="-124" y="-12" width="136" height="24" rx="12" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
+                  <rect x="-96" y="-4" width="74" height="8" rx="4" fill="var(--blue)" fill-opacity=".3"/>
+                  <g transform="translate(-118,0)">
+                    <g transform="rotate(8.7)">
+                      <animateTransform attributeName="transform" type="rotate" values="8.7;8.7;41.8;41.8;8.7;8.7" keyTimes="0;0.28;0.48;0.6;0.8;1" dur="5s" repeatCount="indefinite"/>
+                      <rect x="-7" y="4" width="14" height="26" rx="2" fill="var(--ink)"/>
+                      <path d="M-13 46 L13 46 L7 30 L-7 30 Z" fill="var(--ink)"/>
+                      <rect x="-11" y="46" width="22" height="20" rx="2" fill="var(--blue)" opacity="0">
+                        <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.28;0.5;0.5;0.96;1" dur="5s" repeatCount="indefinite"/>
+                      </rect>
+                      <circle r="10" fill="var(--blue)"/>
+                      <circle r="3.5" fill="var(--card)"/>
+                    </g>
+                  </g>
+                  <circle r="14" fill="var(--ink)"/>
+                  <circle r="5" fill="var(--card)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <circle cx="200" cy="322" r="18" fill="var(--ink)"/>
+          <circle cx="200" cy="322" r="6" fill="var(--card)"/>
+        </g>
       </svg>
-      <span class="chip c1">RUNG 001</span>
-      <span class="chip c2">CYCLE 10 ms</span>
-      <span class="chip c3">ROBOT / PICK</span>
+      <span class="chip c1">CAM 01 / PART FOUND</span>
+      <span class="chip c2">ROBOT 01 / AUTO</span>
+      <span class="chip c3">CYCLE 5.0 s</span>
       <figure class="portrait">
-        <img src="assets/photo.png" alt="Portrait of Fadi Abidi" onerror="this.parentNode.classList.add('nophoto');this.remove()">
+        <img src="assets/photo.jpg" alt="Portrait of Fadi Abidi" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/photo.png'}else{this.parentNode.classList.add('nophoto');this.remove()}">
         <span class="mono-fa">FA</span>
       </figure>
     </div>
@@ -68,10 +116,10 @@
 </section>
 
 <section class="numbers wrap" aria-label="Key figures">
-  <div><b>3</b><span>robot brands integrated: ABB, Estun and Epson SCARA</span></div>
-  <div><b>3</b><span>vision systems integrated: Cognex, Keyence and Hikrobot</span></div>
-  <div><b>4</b><span>complete production lines brought into production</span></div>
-  <div><b>6</b><span>years in industry across MENA, Europe and Asia</span></div>
+  <div><span class="ni"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="19" width="11" height="2.5" rx="1"/><path d="M9 19v-2.2"/><circle cx="9" cy="14.8" r="2"/><path d="M8.3 12.9 6.6 8.4"/><circle cx="6.3" cy="6.6" r="1.8"/><path d="M8 5.9 15.6 3.6"/><path d="M17 3.2v3.6"/><path d="M15.2 6.8h3.6l-.6 2.2h-2.4z"/></svg>Robots</span><b>3</b><span>robot brands integrated: ABB, Estun and Epson SCARA</span></div>
+  <div><span class="ni"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v1.8M12 19.7v1.8"/></svg>Vision</span><b>3</b><span>vision systems integrated: Cognex, Keyence and Hikrobot</span></div>
+  <div><span class="ni"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="13" width="20" height="3.6" rx="1.8"/><rect x="5" y="7.5" width="4.5" height="5.5" rx=".6"/><rect x="12.5" y="7.5" width="4.5" height="5.5" rx=".6"/><path d="M5 16.6v4.4M19 16.6v4.4"/></svg>Lines</span><b>4</b><span>complete production lines brought into production</span></div>
+  <div><span class="ni"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg>Industry</span><b>6<small>yrs</small></b><span>across the MENA region, Europe and Asia</span></div>
 </section>
 
 <section id="projects" class="block">
@@ -238,22 +286,25 @@
 
     </div>
 
-    <h3 class="early-title">Earlier student projects</h3>
+    <h3 class="early-title" id="early">Earlier student projects</h3>
     <div class="early">
       <div class="row">
         <span class="yr">2019</span>
         <div><b>Dual-axis solar tracker</b><p>Team of four at ULT. Four LDR sensors and an Arduino drive two servo axes to keep a panel facing the sun, with the mechanics designed in SolidWorks and the electronics simulated in Proteus.</p></div>
+        <div class="thumbs"><figure class="fit"><img src="assets/img/trk-cad1.jpg" alt="SolidWorks assembly of the dual-axis solar tracker" loading="lazy"></figure><figure class="fit"><img src="assets/img/trk-proteus.jpg" alt="Proteus ISIS schematic of the tracker with four LDRs, two servos and an Arduino" loading="lazy"></figure></div>
         <a class="go" href="assets/docs/solar-tracker-report.pdf" target="_blank" rel="noopener">Report <span aria-hidden="true">&#8599;</span></a>
       </div>
       <div class="row">
         <span class="yr">2018</span>
         <div><b>Coin sorter and counter</b><p>Team of four at ULT. A machine that sorts mixed coins by diameter, counts them and delivers them in batches, designed in SolidWorks and controlled by an Arduino Mega.</p></div>
+        <div class="thumbs"><figure class="fit"><img src="assets/img/coin-exploded.jpg" alt="SolidWorks exploded view of the coin sorter" loading="lazy"></figure><figure class="fit"><img src="assets/img/coin-tubes.jpg" alt="SolidWorks model of the coin tube holder" loading="lazy"></figure></div>
         <a class="go" href="assets/docs/coin-sorter-report.pdf" target="_blank" rel="noopener">Report <span aria-hidden="true">&#8599;</span></a>
       </div>
       <div class="row">
         <span class="yr">2018</span>
-        <div><b>SMT line and board testing</b><p>Internship at ALL Circuits on an SMT line for automotive boards: SPI, pick-and-place, reflow and AOI, plus LED testing with LabVIEW on a CAN test bench.</p></div>
-        <span></span>
+        <div><b>SMT line and solder paste inspection programming</b><p>Internship at ALL Circuits (TIS Circuits plant) on an SMT line for electronic boards. I built a solder paste inspection (SPI) program from the board's Gerber and CAD data: fiducials, panel array, component pads, tolerances and paste height tests. When the machine flagged good boards because of uneven pads, I retuned the tolerance. I also tested LEDs with LabVIEW on a CAN test bench.</p></div>
+        <div class="thumbs"><figure class="fit"><img src="assets/img/tis-spi.jpg" alt="SPI result screen with the 3D solder paste height map of each board" loading="lazy"></figure><figure class="fit"><img src="assets/img/tis-flow.jpg" alt="Process flow of the plant I drew: SMT printing, placement, reflow and vision checks, then through-hole and final test" loading="lazy"></figure><figure><img src="assets/img/tis-bench.jpg" alt="Electronic board connected to a National Instruments CAN test bench" loading="lazy"></figure></div>
+        <a class="go" href="assets/docs/tis-circuits-internship-report.pdf" target="_blank" rel="noopener">Report <span aria-hidden="true">&#8599;</span></a>
       </div>
     </div>
   </div>
@@ -310,7 +361,7 @@
         <p class="meta"><span>Jun 2018</span></p>
         <h4>ALL Circuits</h4>
         <p class="rl">Intern</p>
-        <p>SMT production of automotive electronic boards, preventive maintenance and LED testing with LabVIEW on a CAN test bench.</p>
+        <p>One month on the SMT line of the TIS Circuits plant: I programmed a solder paste inspection (SPI) machine from Gerber and CAD data, took part in feeder calibration and tested LEDs with LabVIEW on a CAN test bench. <a href="#early">See the photos</a> or <a href="assets/docs/tis-circuits-internship-report.pdf" target="_blank" rel="noopener">read the report</a>.</p>
       </article>
       <article class="tcard">
         <p class="meta"><span>Jan 2017 to Jul 2017</span></p>
@@ -347,33 +398,40 @@
       <article class="tcard">
         <p class="meta"><span>2024</span></p>
         <h4>Beckhoff TwinCAT 3</h4>
-        <p class="rl">12 training modules</p>
-        <p>PLC Basics, EtherCAT, Motion, Vision, HMI, Object Oriented Programming, TwinSAFE and Source Control.</p>
+        <p class="rl">12 e-learning modules</p>
+        <p>PLC Basics, Getting Started, EtherCAT, TwinSAFE, Motion Basics, Intermediate Motion, Vision, HMI, Object Oriented Programming, Software Protection, Source Control and Maintenance Fundamentals.</p>
+        <p><a href="assets/docs/beckhoff-twincat3-certificates.pdf" target="_blank" rel="noopener">View the certificates (PDF)</a></p>
       </article>
       <article class="tcard">
         <p class="meta"><span>2024</span></p>
         <h4>EF SET English</h4>
         <p class="rl">C1 Advanced</p>
+        <p>Plus English for STEM, a U.S. Department of State online course (2024).</p>
+        <p><a href="https://cert.efset.org/6zwdSw" target="_blank" rel="noopener">View the EF SET certificate</a><br><a href="https://badges.parchment.com/public/assertions/twe67-RJQlyKohSEnJDSFQ" target="_blank" rel="noopener">English for STEM badge</a></p>
       </article>
       <article class="tcard">
         <p class="meta"><span>2024</span></p>
         <h4>IBM Cognitive Class</h4>
         <p class="rl">Python 101 for Data Science</p>
+        <p><a href="https://courses.cognitiveclass.ai/certificates/74ed416c5be54ac58b363a8c9af39f9c" target="_blank" rel="noopener">Verify the certificate</a></p>
       </article>
       <article class="tcard">
         <p class="meta"><span>2022</span></p>
         <h4>6Sigma Study</h4>
         <p class="rl">Six Sigma Yellow Belt</p>
+        <p><a href="http://81cd1176253f3f59d435-ac22991740ab4ff17e21daf2ed577041.r77.cf1.rackcdn.com/Certificate/SixSigmaYellowBelt-FadiABIDI-845972.pdf" target="_blank" rel="noopener">View the certificate</a></p>
       </article>
       <article class="tcard">
         <p class="meta"><span>2022</span></p>
         <h4>FMEA and Control Plan</h4>
-        <p class="rl">VDA and AIAG</p>
+        <p class="rl">AIAG-VDA, Max-Power Consulting</p>
+        <p><a href="assets/docs/quality-core-tools-training.pdf" target="_blank" rel="noopener">View the attestation (PDF)</a></p>
       </article>
       <article class="tcard">
         <p class="meta"><span>2021</span></p>
-        <h4>SPC and MSA</h4>
-        <p class="rl">Statistical Process Control</p>
+        <h4>SPC, MSA and PPAP/APQP</h4>
+        <p class="rl">Max-Power Consulting</p>
+        <p><a href="assets/docs/quality-core-tools-training.pdf" target="_blank" rel="noopener">View the attestation (PDF)</a></p>
       </article>
     </div>
   </div>
@@ -406,6 +464,7 @@
         <p><b>Low-cost ventilator:</b> a breathing-assistance device with adjustable PEEP and breathing rate.</p>
         <p><b>Protective visors:</b> frames 3D-printed in batches and assembled for hospital staff.</p>
         <p class="tags"><i>Robotics</i><i>Arduino</i><i>XBee</i><i>Mechanical design</i><i>3D printing</i></p>
+        <div class="links-row"><a class="go" href="https://drive.google.com/file/d/1JbW7AyIKWQbcYKEeJQPRe2x-Y6wWtbmH/view?usp=sharing" target="_blank" rel="noopener">See the full project presentation <span aria-hidden="true">&#8599;</span></a></div>
       </div>
     </article>
   </div>

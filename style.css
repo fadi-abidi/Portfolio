@@ -55,12 +55,12 @@ h2.big{font-size:clamp(40px,6vw,84px)}
 .hero-art{position:relative;min-height:520px;border:1px solid var(--line);background:
   linear-gradient(var(--line) 1px,transparent 1px) 0 0/48px 48px,
   linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/48px 48px,var(--card)}
-.rung{position:absolute;left:4%;top:6%;width:92%;height:auto}
+.cell{position:absolute;left:4%;top:7%;width:92%;height:auto}
 .svt{font:500 14px var(--mono);fill:var(--ink)}
 .flow{stroke:var(--run);stroke-width:4;fill:none;stroke-dasharray:10 14;animation:flow 1.6s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-48}}
 .chip{position:absolute;background:var(--card);border:1px solid var(--line);font-size:12px;padding:5px 9px;color:var(--blue)}
-.c1{left:4%;top:50%}.c2{right:6%;top:44%;color:var(--rust)}.c3{left:4%;bottom:6%}
+.c1{left:4%;top:3%;color:var(--run)}.c2{right:4%;top:3%;color:var(--rust)}.c3{left:4%;bottom:4%}
 .portrait{position:absolute;right:6%;bottom:8%;margin:0;width:44%;aspect-ratio:1/1.05;background:var(--blue);border:10px solid var(--card);outline:1px solid var(--line);box-shadow:10px 10px 0 0 var(--blue);overflow:hidden}
 .portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .mono-fa{display:none;position:absolute;inset:0;place-items:center;color:#fff;font:800 64px var(--sans)}
@@ -72,6 +72,10 @@ h2.big{font-size:clamp(40px,6vw,84px)}
 .numbers div:last-child{border-right:0}
 .numbers b{display:block;font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--blue)}
 .numbers span{font-size:15px;color:var(--muted)}
+.numbers .ni{display:flex;align-items:center;gap:10px;margin:0 0 16px;font:700 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.numbers .ni svg{width:30px;height:30px;flex:none;fill:none;stroke:var(--blue);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;padding:6px;border:1px solid var(--line);background:var(--card);box-sizing:content-box}
+.numbers div > span:last-child{display:block;line-height:1.45}
+.numbers b small{font-size:.38em;margin-left:6px;letter-spacing:0;font-weight:700}
 
 /* Sections */
 .block{padding:96px 0;border-bottom:1px solid var(--line)}
@@ -114,7 +118,15 @@ details p{margin:10px 0 0;font-size:16px}
 /* Earlier student projects */
 .early-title{font-size:26px;letter-spacing:-.03em;margin:56px 0 14px}
 .early{border-top:1px solid var(--line)}
-.early .row{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.early .row{display:grid;grid-template-columns:70px 1fr auto 90px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.early .thumbs{display:flex;gap:8px}
+.early .thumbs figure{margin:0;width:112px;height:84px;background:var(--card2);border:1px solid var(--line);cursor:zoom-in;overflow:hidden}
+.early .thumbs img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.early .thumbs figure:hover img{transform:scale(1.06)}
+.early .thumbs figure.fit{background:#fff}
+.early .thumbs figure.fit img{object-fit:contain;padding:4px;box-sizing:border-box}
+.early .go{justify-self:start}
+.early-title{scroll-margin-top:84px}
 .early .yr{font:700 13px var(--mono);color:var(--blue);letter-spacing:.08em}
 .early b{font-size:19px;letter-spacing:-.02em}
 .early p{margin:4px 0 0;color:var(--muted);font-size:16px;max-width:70ch}
@@ -212,7 +224,8 @@ footer{padding:28px 0 40px;font:13px var(--mono);color:var(--muted)}
   .card .body{padding:20px}
   .vol .body{padding:22px}
   .links{font-size:22px}
-  .early .row{grid-template-columns:1fr;gap:6px}
+  .early .row{grid-template-columns:1fr;gap:10px}
+  .early .thumbs figure{width:50%;height:auto;aspect-ratio:4/3}
 }
 @media (prefers-reduced-motion: reduce){
   .flow{animation:none;stroke-dasharray:none}
