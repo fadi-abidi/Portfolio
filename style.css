@@ -57,6 +57,8 @@ h2.big{font-size:clamp(40px,6vw,84px)}
   linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/48px 48px,var(--card)}
 .cell{position:absolute;left:4%;top:7%;width:92%;height:auto}
 .svt{font:500 14px var(--mono);fill:var(--ink)}
+.svt.lbl{font-size:11.5px;letter-spacing:.02em;fill:var(--muted)}
+@media (max-width:720px){.svt.lbl{display:none}}
 .flow{stroke:var(--run);stroke-width:4;fill:none;stroke-dasharray:10 14;animation:flow 1.6s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-48}}
 .chip{position:absolute;background:var(--card);border:1px solid var(--line);font-size:12px;padding:5px 9px;color:var(--blue)}

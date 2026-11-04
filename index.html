@@ -45,8 +45,27 @@
       <p class="stack"><b>Core stack</b> ABB, Estun and Epson robots &middot; Cognex, Keyence and Hikrobot vision &middot; Beckhoff TwinCAT 3 &middot; Siemens TIA Portal &middot; EtherCAT &middot; SolidWorks</p>
     </div>
     <div class="hero-art">
-      <svg class="cell" viewBox="0 0 520 400" role="img" aria-label="Illustration of a robot cell: a vision camera checks a part on a conveyor and a robot arm picks it">
+      <svg class="cell" viewBox="0 0 520 400" role="img" aria-label="Illustration of a robot cell driven by PLC logic: when the camera confirms the part and safety is OK, the ladder rung energizes ROBOT_PICK and the robot arm picks the part from the conveyor">
         <line x1="10" y1="380" x2="250" y2="380" stroke="var(--wire)" stroke-width="2" stroke-dasharray="6 6"/>
+        <g class="rung2" aria-hidden="true">
+          <line x1="272" y1="70" x2="272" y2="150" stroke="var(--blue)" stroke-width="4"/>
+          <line x1="500" y1="70" x2="500" y2="150" stroke="var(--blue)" stroke-width="4"/>
+          <path d="M272 112H300M316 112H364M380 112H443M473 112H500" stroke="var(--wire)" stroke-width="3" fill="none"/>
+          <path class="flow" d="M272 112H300"/>
+          <path class="flow" d="M316 112H364M380 112H443M473 112H500" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22;0.23;0.6;0.61;1" dur="5s" repeatCount="indefinite"/></path>
+          <rect x="302" y="101" width="12" height="22" fill="var(--run)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22;0.23;0.6;0.61;1" dur="5s" repeatCount="indefinite"/></rect>
+          <rect x="366" y="101" width="12" height="22" fill="var(--run)" opacity=".85"/>
+          <line x1="300" y1="98" x2="300" y2="126" stroke="var(--ink)" stroke-width="3.5"/>
+          <line x1="316" y1="98" x2="316" y2="126" stroke="var(--ink)" stroke-width="3.5"/>
+          <line x1="364" y1="98" x2="364" y2="126" stroke="var(--ink)" stroke-width="3.5"/>
+          <line x1="380" y1="98" x2="380" y2="126" stroke="var(--ink)" stroke-width="3.5"/>
+          <circle cx="458" cy="112" r="15" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
+          <circle cx="458" cy="112" r="15" fill="var(--blue)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24;0.25;0.6;0.61;1" dur="5s" repeatCount="indefinite"/></circle>
+          <circle cx="458" cy="112" r="8" fill="none" stroke="var(--card)" stroke-width="2" stroke-dasharray="3 3" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24;0.25;0.6;0.61;1" dur="5s" repeatCount="indefinite"/></circle>
+          <text x="308" y="88" text-anchor="middle" class="svt lbl">CAM_OK</text>
+          <text x="372" y="88" text-anchor="middle" class="svt lbl">SAFETY_OK</text>
+          <text x="458" y="88" text-anchor="middle" class="svt lbl">ROBOT_PICK</text>
+        </g>
         <g class="cam">
           <line x1="14" y1="46" x2="128" y2="46" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
           <line x1="92" y1="46" x2="92" y2="62" stroke="var(--ink)" stroke-width="4"/>
