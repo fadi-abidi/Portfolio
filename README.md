@@ -1,24 +1,15 @@
 # Fadi Abidi | Portfolio
 
-Personal portfolio of a Controls & Automation Engineer based in Ariana, Tunisia.
+Personal portfolio of Fadi Abidi, Controls and Automation Engineer.
 
-**Live site:** https://fadi-abidi.github.io/Portfolio/
+Live site: https://fadi-abidi.github.io/Portfolio/
 
-## What's on it
+It shows commissioning work on photovoltaic production lines, machines designed during my studies and internships, my first lab automation scripts in Python and my volunteering with the COVID-19 Task Force in Jendouba.
 
-Projects: 4 photovoltaic production lines commissioned in Algeria, India, China and France, my first Python lab automation protocols with PyLabRobot, an automated weighing and packaging line and the Doctor J medical robot.
+## Structure
 
-Experience, education, certifications and skills in PLC programming, robotics, machine vision, industrial networks and Python.
+`index.html` holds the page content, `style.css` the design (light and dark appearance) and `script.js` the project filters, photo galleries, photo viewer and appearance switch.
 
-## Built with
+`assets/img` holds the project photos, `assets/docs` the project reports and my CV and `assets/photo.png` my portrait.
 
-Plain HTML, CSS and JavaScript, hosted on GitHub Pages. No framework and no build step. Light and dark appearance, project filters and a responsive layout for phones.
-
-## Files
-
-| File | Purpose |
-|---|---|
-| `index.html` | Content |
-| `style.css` | Design |
-| `script.js` | Project filters, appearance switch and footer year |
-| `assets/photo.png` | Portrait |
+The site is plain HTML, CSS and JavaScript with no build step, published with GitHub Pages from the main branch.
