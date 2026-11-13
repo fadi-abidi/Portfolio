@@ -207,6 +207,31 @@ details p{margin:10px 0 0;font-size:16px}
 .last{border-bottom:0}
 footer{padding:28px 0 40px;font:13px var(--mono);color:var(--muted)}
 
+/* Job match */
+.match{margin-top:44px;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--blue);padding:28px}
+.mlabel{display:block;font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 10px}
+.match textarea{display:block;width:100%;font:16px/1.5 var(--sans);color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:14px;resize:vertical;min-height:160px}
+.match textarea:focus{border-color:var(--blue)}
+.mbtns{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+.mbtns .btn{font-size:16px;padding:12px 18px;cursor:pointer;font-family:var(--sans)}
+.mnote{font:13px var(--mono);color:var(--muted);margin:14px 0 0}
+.mresult:empty{display:none}
+.mresult{margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+.msum{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1.3;margin:0 0 6px}
+.msum b{color:var(--run)}
+.mhint{color:var(--muted);margin:0;font-size:16px}
+.mgroup{font:700 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:28px 0 0;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.mgroup.gap{color:var(--rust)}
+.mrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) 110px;gap:6px 20px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.mrow b{font-size:17px;letter-spacing:-.01em}
+.mrow b::before{content:"\2713";color:var(--run);margin-right:10px;font-weight:800}
+.mrow.gap b::before{content:"\2013";color:var(--rust)}
+.mrow span{color:var(--muted);font-size:16px}
+.mrow .go{font-size:15px;white-space:nowrap;justify-self:end}
+.tcard,.sec,#match{scroll-margin-top:84px}
+.tcard:target{outline:3px solid #4DC3E8;outline-offset:4px;animation:spot2 2.4s ease-out 1 forwards}
+@keyframes spot2{0%,60%{outline-color:#4DC3E8}100%{outline-color:transparent}}
+
 @media (max-width:980px){
   .hero-grid,.about{grid-template-columns:1fr}
   .hero-art{min-height:460px}
@@ -234,6 +259,9 @@ footer{padding:28px 0 40px;font:13px var(--mono);color:var(--muted)}
   .links{font-size:22px}
   .early .row{grid-template-columns:1fr;gap:10px}
   .early .thumbs figure{width:50%;height:auto;aspect-ratio:4/3}
+  .match{padding:20px}
+  .mrow{grid-template-columns:1fr;gap:4px}
+  .mrow .go{justify-self:start}
 }
 @media (prefers-reduced-motion: reduce){
   .flow{animation:none;stroke-dasharray:none}

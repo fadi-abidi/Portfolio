@@ -23,6 +23,7 @@
       <a href="#experience">Experience</a>
       <a href="#volunteering">Volunteering</a>
       <a href="#skills">Skills</a>
+      <a href="#match">Job match</a>
       <a href="#contact">Contact</a>
       <a class="cv" href="assets/docs/Fadi_Abidi_CV.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
@@ -345,21 +346,21 @@
 
     <h3 class="sec"><span>01</span> Professional experience</h3>
     <div class="tl">
-      <article class="tcard current">
+      <article class="tcard current" id="exp-mondragon">
         <p class="meta"><span>Jul 2024 to present</span><span class="now">Current</span></p>
         <h4>Mondragon Assembly Group</h4>
         <p class="rl">Automation Engineer</p>
         <p>Robot programming and integration (ABB and Estun for vision-guided pick and place, Epson SCARA), machine vision (Cognex, Keyence and Hikrobot) and PLC programming with Beckhoff TwinCAT 3 and Siemens TIA Portal on photovoltaic production lines. EtherCAT, PROFINET and EtherNet/IP networks, servo drives and HMI development.</p>
         <p>4 complete lines brought into production across the MENA region, Europe and Asia, including a 500 MW solar module plant. <a href="#rob-01">See the project</a>.</p>
       </article>
-      <article class="tcard">
+      <article class="tcard" id="exp-marquardt">
         <p class="meta"><span>Oct 2022 to Jun 2024</span></p>
         <h4>Marquardt Tunisia</h4>
         <p class="rl">Electronics Process Engineer</p>
         <p>Programmed and optimized electronic production equipment: wave and selective soldering, press fitting, conformal coating and CNC milling. Reduced downtime through troubleshooting and preventive maintenance, improved SMT and THT processes and solved recurring issues with Ishikawa and 5 Whys.</p>
         <p>Managed Engineering Change Notices from feasibility to prototype validation. <a href="#prc-04">See the project</a>.</p>
       </article>
-      <article class="tcard">
+      <article class="tcard" id="exp-sumitomo">
         <p class="meta"><span>Jan 2021 to Oct 2022</span></p>
         <h4>Sumitomo Electric Bordnetze</h4>
         <p class="rl">Methods and Process Engineer</p>
@@ -382,7 +383,7 @@
         <p class="rl">Intern</p>
         <p>Design and hydraulic sizing of a mobile car lift for 2,700 kg vehicles. <a href="#mec-03">See the project</a>.</p>
       </article>
-      <article class="tcard">
+      <article class="tcard" id="exp-allcircuits">
         <p class="meta"><span>Jun 2018</span></p>
         <h4>ALL Circuits</h4>
         <p class="rl">Intern</p>
@@ -402,7 +403,7 @@
       </article>
     </div>
 
-    <h3 class="sec"><span>03</span> Education</h3>
+    <h3 class="sec" id="edu"><span>03</span> Education</h3>
     <div class="tl">
       <article class="tcard">
         <p class="meta"><span>Sep 2017 to Sep 2020</span></p>
@@ -418,7 +419,7 @@
       </article>
     </div>
 
-    <h3 class="sec"><span>04</span> Certifications</h3>
+    <h3 class="sec" id="certs"><span>04</span> Certifications</h3>
     <div class="tl three">
       <article class="tcard">
         <p class="meta"><span>2024</span></p>
@@ -511,6 +512,27 @@
       <div class="skill"><h4>HMI and safety</h4><p>TwinCAT HMI, WinCC, InTouch, IX Developer, EasyBuilder Pro, Beckhoff TwinSAFE, safety interlocks</p></div>
       <div class="skill"><h4>Python</h4><p>Scripts for test tools, log analysis and TCP and serial communication, PyLabRobot, Git and GitHub</p></div>
       <div class="skill"><h4>Quality and Lean</h4><p>8D, PFMEA, FMECA, Ishikawa, 5 Whys, SPC, MSA, VSM, OEE, SMED</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="match" class="block">
+  <div class="wrap">
+    <p class="eyebrow">For recruiters</p>
+    <div class="head">
+      <h2>Job match</h2>
+      <p class="sub">Paste a job description and see which requirements my experience covers, with the proof for each one.</p>
+    </div>
+    <div class="match">
+      <label class="mlabel" for="jd">Job description, in English or French</label>
+      <textarea id="jd" rows="9" placeholder="Paste the job description here."></textarea>
+      <div class="mbtns">
+        <button class="btn primary" id="jd-check" type="button">Check the match</button>
+        <button class="btn" id="jd-sample" type="button">Try an example</button>
+        <button class="btn" id="jd-clear" type="button">Clear</button>
+      </div>
+      <p class="mnote">The text stays in your browser. Nothing is sent or saved.</p>
+      <div class="mresult" id="jd-result" aria-live="polite"></div>
     </div>
   </div>
 </section>
